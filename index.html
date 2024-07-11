@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I-Tunes</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="music-controller.js" defer type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="output">
+      <h1 class="align-c">My Music</h1>
+      <div class="song-input">
+        <input id="artistInput" type="text" placeholder="Enter the artist" />
+        <button id="getResultButton">Get Results</button>
+      </div>
+      <div class="player">
+        <h1>Music Player</h1>
+        <audio id="audio" controls>
+            <source src="your-song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+      
+      <div class="container flex">
+        <div id="audio-display" class="flex flex-d-c"></div>
+        <div id="playlist-display" class="flex flex-d-c"></div>
+      </div>
+    </div>
+  </body>
+</html>
